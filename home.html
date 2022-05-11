@@ -1,0 +1,401 @@
+<section ng-include="'slider.html'">
+</section>
+
+<div class="   text-center container">
+    <div class="sc_heading">
+        <h2 style="text-transform: uppercase; color: #ef233c;" class="title title-bold">Welcome to Nattwest Consultants
+        </h2>
+        <p class="sub-heading">Nattwest Consultants is a specialized educational advising agency dedicated to offering an affordable, high quality test preparation and accurate advising services for students seeking to study in the United States, Canada, and other Countries.
+        </p><span class="line"></span>
+    </div>
+</div>
+<hr>
+
+
+<!-- --------------------------------------- -->
+
+<div class="container edu-section">
+    <div class="column">
+        <a href="" ng-click="routClick('sample-interview-questions')" ng-class="{'red-color': url == 'sample-interview-questions' }">
+            <i class="fa fa-graduation-cap" style="font-size:60px;color:#ef233c;"></i>
+
+            <h3 class="single_service-heading">SAMPLE INTERVIEW QUESTIONS</h3>
+            <p>While getting into a University at abroad is a matter of...</p>
+        </a>
+
+    </div>
+    <div class="column">
+        <a href="" ng-click="routClick('scholarship')" ng-class="{'red-color': url == 'scholarship' }">
+            <i class="fa fa-graduation-cap" style="font-size:60px;color:#ef233c;"></i>
+            <h3 class="single_service-heading">SCHOLARSHIP</h3>
+            <p>Scholarships & Financial aid fee waivers are awarded to...</p>
+        </a>
+    </div>
+    <div class="column">
+        <a href="" ng-click="routClick('travel')" ng-class="{'red-color': url == 'travel' }">
+            <i class="fa fa-graduation-cap" style="font-size:60px;color:#ef233c;"></i>
+            <h3 class="single_service-heading">TRAVEL</h3>
+            <p>Just so you don't have to go through the hassle, the moment you...</p>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="" ng-click="routClick('education-loan')" ng-class="{'red-color': url == 'education-loan' }">
+            <i class="fa fa-graduation-cap" style="font-size:60px;color:#ef233c;"></i>
+            <h3 class="single_service-heading">EDUCATION LOAN</h3>
+            <p>The number of students opting for higher education abroad has...</p>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+<!-- -------------------------------- -->
+
+<style>
+    .elementor-column p {
+        color: #fff;
+        font-size: 37px !important;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    .elementor-column .elementor-widget-wrap {
+        margin-top: 130px;
+    }
+    
+    .elementor-column .elementor-widget-wrap p span {
+        color: #ef233c;
+    }
+    
+    .card.px-1.py-4 {
+        margin: 0px;
+        border-radius: inherit !important;
+        margin-left: 16%;
+        height: 476px;
+    }
+    
+    .card.px-1.py-4 .btn-primary {
+        width: 35%;
+        margin-left: 5%;
+        background-color: #ef233c;
+        margin-top: 38px;
+    }
+    
+    .card-body {
+        padding-right: 560px;
+    }
+    
+    .form-group {
+        width: -34px;
+        margin-left: 48px;
+    }
+</style>
+
+<section class="contact-section elementor-section ">
+    <div style="width: 100%; background-color: black; opacity: 0.3; position: absolute;
+        height: 499px;"></div>
+    <div class="elementor-container container ">
+        <div class="elementor-column">
+            <div class="elementor-row">
+                <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap">
+                        <p class="get-100s">Our Major <span class="thim-color">International</span></p>
+                        <h2>Credentials</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-column">
+            <div class="elementor-row">
+                <!-- <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap" style="margin-top: 0px;">
+                     
+                        <div class="container mt-5 mb-5 d-flex justify-content-center">
+                            
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+
+                <div class="contact-form">
+                    <div class="contact-form-body hide" id="formDivSuccess">
+                        <div style="width:100%; text-align:center">
+                            <h1 style="
+                            margin-top: 150px;
+                            text-align: center;
+                        ">Your message sent successfully</h1>
+                            <!-- <a href="#">Go Back to website</a> -->
+                        </div>
+                    </div>
+                    <div class="contact-form-body" id="formDiv">
+                        <span></span>
+                        <dl></dl>
+                        <h6 class="card-title mb-3">
+                            Get in touch with us to see how We can help you reach your dreams.
+                        </h6>
+                        <div class="content-form">
+                            <form name="form" class="css-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" ng-model="formModel.name" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Phone" id="msg_subject" class="form-control" ng-model="formModel.phone" name="phone" required data-error="Please enter your subject">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" ng-model="formModel.email" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <textarea class="form-control" id="message" ng-model="formModel.message" name="message" placeholder="Write Message" rows="2" data-error="Write your message" required></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button ng-click="formClick()" type="submit" class="btn btn-primary btn-block confirm-button">Get In Touch</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .contact-form .form-group {
+        margin-left: 15px;
+        width: 100%;
+    }
+    
+    .contact-form form .row p {
+        color: #000;
+        font-size: 13px !important;
+        text-transform: none;
+    }
+    
+    .contact-form form .row {
+        margin-top: 0px !important;
+    }
+    
+    .contact-form .input-group {
+        width: 89%;
+    }
+    
+    .contact-form .content-form {
+        margin-top: 158px;
+    }
+    
+    .contact-form {
+        background: #fff;
+        width: 70%;
+        margin-left: 15%;
+        height: 470px;
+        margin-top: 19px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .contact-form span {
+        border-radius: 100%;
+        width: 100%;
+        height: 200px;
+        display: block;
+        background: #ef233c;
+        position: absolute;
+        top: -56px;
+    }
+    
+    .contact-form dl {
+        background: #ef233c;
+        height: 92px;
+        position: absolute;
+        width: 100%;
+        top: -50px;
+    }
+    
+    .contact-form .contact-form-body {}
+    
+    .contact-form input {}
+    
+    .contact-form h6 {
+        font-size: 1.5em;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        z-index: 999;
+        width: 100%;
+        color: #fff;
+        padding: 19px;
+        line-height: 28px;
+    }
+    
+    .contact-form button {
+        background: #ef233c;
+        border: none;
+        border-radius: 0px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .contact-form button:hover {
+        background: #000;
+    }
+</style>
+
+
+
+<section class="test-prepration-sectcion container">
+    <div class="tp-section sc_heading ">
+        <h3 class="title-bold">Test Preparation</h3>
+        <p class="sub-heading">Overseas Education Consultants in Hyderabad</p>
+        <span class="line"></span>
+    </div>
+
+    <div class="prepration-set">
+
+        <div class="tp-inner">
+            <img src="img/ielts.jpg" alt="ielts" class="img-tp-inner-section">
+            <h2>IELTS</h2>
+            <P>The International English Language Testing System (IELTS) measures...</P>
+            <a href="#" ng-click="routClick('ielts')" ng-class="{'red-color': url == 'ielts' }">Ream more...</a>
+
+        </div>
+
+        <div class="tp-inner">
+            <img src="img/gmat.jpg" alt="ielts" class="img-tp-inner-section">
+            <h2>GMAT</h2>
+            <P>The Graduate Management Admission Test (GMAT) is a computer-...</P>
+            <a href="#" ng-click="routClick('gmat')" ng-class="{'red-color': url == 'gmat' }">Ream more...</a>
+            </li>
+        </div>
+
+        <div class="tp-inner">
+            <img src="img/tofel.jpg" alt="ielts" class="img-tp-inner-section">
+            <h2>TOEFL</h2>
+            <P>The International English Language Testing System (TOEFL) measures...</P>
+            <a href="#" ng-click="routClick('toefl')" ng-class="{'red-color': url == 'toefl' }">Ream more...</a>
+        </div>
+
+        <div class="tp-inner">
+            <img src="img/gre.jpg" alt="sat" class="img-tp-inner-section">
+            <h2>SAT</h2>
+            <P>The International English Language Testing System (SAT) measures...</P>
+            <a href="#" ng-click="routClick('sat')" ng-class="{'red-color': url == 'sat' }">Ream more...</a>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<!-- study destination section -->
+
+<section class="study-destination-section container">
+    <div class="sd-set sc_heading">
+        <h3 class="title-bold">Study Destination</h3>
+        <p class="sub-heading">Best Foreign Education Consultants in Hyderabad</p>
+        <span class="line"></span>
+
+    </div>
+
+    <div class="study-destination">
+
+        <div class="sd-inner">
+            <img src="img/usa02.jpg" alt="ielts" class="img-sd-inner-section">
+            <h2 class="title-bold-sd"> Study in USA</h2>
+            <P class="sub-heading">The United States of America needs no introduction. Over the past...</P>
+            <a href="#" ng-click="routClick('study-in-usa')" ng-class="{'red-color': url == 'study-in-usa' }">Ream more...</a>
+        </div>
+
+        <div class="sd-inner">
+            <img src="img/canada02.jpg" alt="ielts" class="img-sd-inner-section">
+            <h2 class="title-bold-sd">Study in Canada</h2>
+            <P class="sub-heading">The United States of America needs no introduction. Over the past...</P>
+            <a href="#" ng-click="routClick('study-in-canada')" ng-class="{'red-color': url == 'study-in-canada' }">Ream more...</a>
+        </div>
+        <div class="sd-inner">
+            <img src="img/uk.jpg" alt="ielts" class="img-sd-inner-section">
+            <h2 class="title-bold-sd">Study in UK</h2>
+            <P class="sub-heading">The United States of America needs no introduction. Over the past...</P>
+            <a href="#" ng-click="routClick('study-in-uk')" ng-class="{'red-color': url == 'study-in-uk' }">Ream more...</a>
+        </div>
+        <div class="sd-inner">
+            <img src="img/aus.jpg" alt="ielts" class="img-sd-inner-section">
+            <h2 class="title-bold-sd">Study in Australia</h2>
+            <P class="sub-heading">The United States of America needs no introduction. Over the past...</P>
+            <a href="#" ng-click="routClick('study-in-australia')" ng-class="{'red-color': url == 'study-in-australia' }">Ream more...</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- FEATURED UNIVERSITIES -->
+
+<section class="featured-section container">
+    <div class="feature-sect sc_heading">
+        <h3 class="title-bold">Featured Universities</h3>
+        <span class="line"></span>
+    </div>
+    <div class="featured-img">
+        <div class="fe-inner">
+            <img src="img/colorado.jpg" alt="ielts" class="img-fe-inner-section">
+        </div>
+        <div class="fe-inner">
+            <img src="img/fresnostate.jpg" alt="ielts" class="img-fe-inner-section">
+        </div>
+        <div class="fe-inner">
+            <img src="img/golden_gate.jpg" alt="ielts" class="img-fe-inner-section">
+        </div>
+        <div class="fe-inner">
+            <img src="img/la_trobe.jpg" alt="ielts" class="img-fe-inner-section">
+        </div>
+        <div class="fe-inner">
+            <img src="img/milwaukee.jpg" alt="ielts" class="img-fe-inner-section">
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- testimonial section -->
+<section class="testimonial-section container ">
+    <h3 class="title-bold" style="text-align: center;">STUDENTS SPEAK ABOUT US</h3>
+
+
+    <img src="img/profile.jpg" alt="" class="img-tm">
+    <h4 class="sub-heading"><b>Manjita Dhaka</b></h4>
+
+    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nesciunt tenetur magni modi illo amet corporis quos tempore incidunt dolorum officia cupiditate vero quis eos quaerat quasi, similique repudiandae assumenda. quos tempore incidunt dolorum
+        officia cupiditate vero quis eos quaerat quasi, similique repudiandae assumenda.
+    </p>
+</section>

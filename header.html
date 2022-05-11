@@ -1,0 +1,157 @@
+<style>
+    .red-color {
+        color: #ef233c !important;
+    }
+    
+    .sticky {
+        position: fixed !important;
+        top: 0px !important;
+        z-index: 99 !important;
+        width: 100% !important;
+    }
+</style>
+<header class="reworked" id="myHeader">
+    <div class="section-navbar-head">
+        <div class="container nav-bar01">
+            <div class="logo">
+                <a href="#" ng-click="routClick('home')" ng-class="{'red-color': url == 'home' }"> <img src="img/logo.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="nav_bu" class="navbar navbar-default" role="navigation">
+        <div class="section-navbar-main">
+            <div class="container nav-bar02">
+                <div class="navbar-header clearfix">
+                    <ul class="navbar-nav">
+
+                        <input type="text" ng-model="locationPath" ng-model-options="{ getterSetter: true }" />
+
+
+                        <li data-page-id="1412901213637" class="has-sub">
+                            <a ng-href="#home" ng-class="{'red-color': url == 'home' }">Home1</a>
+                        </li>
+                        <li data-page-id="1412901701399" class="has-sub">
+                            <a href="#/about-us" ng-click="routClick('about-us')" ng-class="{'red-color': url == 'about' }">About
+                                Us</a>
+                        </li>
+                        <li data-page-id="1412901191629" class="has-sub">
+                            <a href="" ng-class="{'red-color': url == 'test-preparation' }">Test Preparation</a>
+                            <ul>
+                                <li class="has-sub"> <a href="#" ng-click="routClick('ielts')" ng-class="{'red-color': url == 'ielts' }">IELTS</a>
+                                </li>
+
+                                <li class="has-sub"> <a href="#" ng-click="routClick('pte')" ng-class="{'red-color': url == 'pte' }">PTE</a>
+                                </li>
+                                <li class="has-sub"> <a href="#" ng-click="routClick('sat')" ng-class="{'red-color': url == 'sat' }">SAT</a>
+                                </li>
+                                <li class="has-sub"> <a href="#" ng-click="routClick('toefl')" ng-class="{'red-color': url == 'toefl' }">TOEFL</a>
+                                </li>
+                                <li class="has-sub"> <a href="#" ng-click="routClick('gre')" ng-class="{'red-color': url == 'gre' }">GRE</a>
+                                </li>
+                                <li class="has-sub"> <a href="#" ng-click="routClick('gmat')" ng-class="{'red-color': url == 'gmat' }">G
+                                        MAT</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li data-page-id="1412901714942" class="has-sub">
+                            <a href="" ng-class="{'red-color': url == 'study-abroad' }">Study
+                                Abroad</a>
+                            <ul>
+                                <li class="has-sub"> <a href="#" ng-click="routClick('study-in-usa')" ng-class="{'red-color': url == 'study-in-usa' }">Study in USA</a>
+                                </li>
+                                <li class="has-sub"> <a href="#" ng-click="routClick('study-in-australia')" ng-class="{'red-color': url == 'study-in-australia' }">Study in Australia</a>
+                                </li>
+
+                                <li class="has-sub"> <a href="#" ng-click="routClick('study-in-canada')" ng-class="{'red-color': url == 'study-in-canada' }">Study in Canada</a>
+                                </li>
+
+                                <li class="has-sub"> <a href="#" ng-click="routClick('study-in-uk')" ng-class="{'red-color': url == 'study-in-uk' }">Study in UK</a>
+                                </li>
+
+                                <li class="has-sub"> <a href="#" ng-click="routClick('study-in-newzealand')" ng-class="{'red-color': url == 'study-in-newzealand' }">Study in New Zealand</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <style>
+                            header.reworked .navbar-nav>li.has-sub>ul {
+                                display: none;
+                                position: absolute;
+                                z-index: 9999;
+                                background: white;
+                                width: 150px;
+                                padding: 0px 10px;
+                            }
+                            
+                            header.reworked .navbar-nav>li.has-sub>ul>li {
+                                margin: 10px 0px;
+                                cursor: pointer;
+                                border-bottom: .1em dashed #a09f9f;
+                                padding-bottom: 5px;
+                            }
+                            
+                            header.reworked .navbar-nav>li.has-sub>ul>li:hover {
+                                margin: 10px 0px;
+                                cursor: pointer;
+                                color: #ef233c;
+                            }
+                            
+                            header.reworked .navbar-nav>li.has-sub:hover>ul {
+                                display: block;
+                            }
+                        </style>
+                        <li data-page-id="1412911795569" class="has-sub">
+                            <a href="#" ng-click="routClick('gallery')" ng-class="{'red-color': url == 'gallery' }">Gallery</a>
+                        </li>
+                        <li data-page-id="1912897450170">
+                            <a href="#!contact" ng-class="{'red-color': url == 'contact' }">Contact</a>
+                        </li>
+
+                </div>
+            </div>
+        </div>
+        <div class="section-navbar-meta">
+            <div class="container">
+                <div class="navbar-helpers">
+                    <ul class="nav nav-pills meta-links" role="navigation">
+                        <li class="has-sub">
+                            <a href="#" ng-click="routClick('contact')" ng-class="{'red-color': url == 'contact' }" target="_blank">
+                                <span>Signup for free Consultaion</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="mailto:info@ncoverseas.com" target="blank">
+                                    Email:</span>info@ncoverseas.com</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/917095496888" target="blank">
+                                <i class="fa-solid fa-phone fa fa-whatsapp"></i> +91 709 549 6888
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-off-canvas-container-ID"></div>
+</header>
+
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
